@@ -48,7 +48,7 @@ export default function SignUp({ navigation }) {
           />
           <FormInput
             icon="mail-outline"
-            keyboardType="email-adress"
+            keyboardType="email-address"
             autoCorrent={false}
             autoCapitalize="none"
             placeholder="Digite seu e-mail"
