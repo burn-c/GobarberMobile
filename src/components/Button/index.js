@@ -1,5 +1,5 @@
 import React from 'react';
-import { ActivityIndicatior } from 'react-native';
+import { ActivityIndicator } from 'react-native';
 import PropTypes from 'prop-types';
 
 import { Container, Text } from './styles';
@@ -8,7 +8,7 @@ export default function Button({ children, loading, ...rest }) {
   return (
     <Container {...rest}>
       {loading ? (
-        <ActivityIndicatior size="small" color="#fff" />
+        <ActivityIndicator size="small" color="#fff" />
       ) : (
         <Text>{children}</Text>
       )}
@@ -16,9 +16,9 @@ export default function Button({ children, loading, ...rest }) {
   );
 }
 
-Button.PropTypes = {
+Button.propTypes = {
   children: PropTypes.string.isRequired,
-  loading: PropTypes.boll,
+  loading: PropTypes.bool,
 };
 
 Button.defaultProps = {
